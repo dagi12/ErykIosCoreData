@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E89FBFB215B6D69E0CDBC28 /* Pods_ErykIosCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6B1EB0CF248EEF1421294E /* Pods_ErykIosCoreData.framework */; };
 		8E54470520CEE11B0016FD37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54470420CEE11B0016FD37 /* AppDelegate.swift */; };
 		8E54470720CEE11B0016FD37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54470620CEE11B0016FD37 /* ViewController.swift */; };
 		8E54470A20CEE11B0016FD37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E54470820CEE11B0016FD37 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46282777A06939BB1BB38BC6 /* Pods-ErykIosCoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErykIosCoreData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ErykIosCoreData/Pods-ErykIosCoreData.debug.xcconfig"; sourceTree = "<group>"; };
+		6F7868AB15D091BF80ADBDE4 /* Pods-ErykIosCoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErykIosCoreData.release.xcconfig"; path = "Pods/Target Support Files/Pods-ErykIosCoreData/Pods-ErykIosCoreData.release.xcconfig"; sourceTree = "<group>"; };
 		8E54470120CEE11B0016FD37 /* ErykIosCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErykIosCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E54470420CEE11B0016FD37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E54470620CEE11B0016FD37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		8E54470E20CEE11D0016FD37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E54471120CEE11D0016FD37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E54471320CEE11D0016FD37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE6B1EB0CF248EEF1421294E /* Pods_ErykIosCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErykIosCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E89FBFB215B6D69E0CDBC28 /* Pods_ErykIosCoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18E6D5AA5BA790C58B67A14B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46282777A06939BB1BB38BC6 /* Pods-ErykIosCoreData.debug.xcconfig */,
+				6F7868AB15D091BF80ADBDE4 /* Pods-ErykIosCoreData.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8E5446F820CEE11B0016FD37 = {
 			isa = PBXGroup;
 			children = (
 				8E54470320CEE11B0016FD37 /* ErykIosCoreData */,
 				8E54470220CEE11B0016FD37 /* Products */,
+				18E6D5AA5BA790C58B67A14B /* Pods */,
+				91047BA6D057BF338279B153 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = ErykIosCoreData;
 			sourceTree = "<group>";
 		};
+		91047BA6D057BF338279B153 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE6B1EB0CF248EEF1421294E /* Pods_ErykIosCoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E54471620CEE11D0016FD37 /* Build configuration list for PBXNativeTarget "ErykIosCoreData" */;
 			buildPhases = (
+				8BEA8DC190646ED94D5768C5 /* [CP] Check Pods Manifest.lock */,
 				8E5446FD20CEE11B0016FD37 /* Sources */,
 				8E5446FE20CEE11B0016FD37 /* Frameworks */,
 				8E5446FF20CEE11B0016FD37 /* Resources */,
+				A30C5EA243622FF47455AECC /* [CP] Embed Pods Frameworks */,
+				7F552B21AFB26F723BFB13C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F552B21AFB26F723BFB13C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ErykIosCoreData/Pods-ErykIosCoreData-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BEA8DC190646ED94D5768C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ErykIosCoreData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A30C5EA243622FF47455AECC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ErykIosCoreData/Pods-ErykIosCoreData-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E5446FD20CEE11B0016FD37 /* Sources */ = {
@@ -282,11 +360,13 @@
 		};
 		8E54471720CEE11D0016FD37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46282777A06939BB1BB38BC6 /* Pods-ErykIosCoreData.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28J8R24SUR;
 				INFOPLIST_FILE = ErykIosCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +380,13 @@
 		};
 		8E54471820CEE11D0016FD37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F7868AB15D091BF80ADBDE4 /* Pods-ErykIosCoreData.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28J8R24SUR;
 				INFOPLIST_FILE = ErykIosCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
